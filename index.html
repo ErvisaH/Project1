@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light sticky-top container">
+    <h1 class="navbar-brand">Bazaart</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<!---push the ul to the left adding ml-auto to the class-->
+			<ul class="navbar-nav ml-auto">
+				<!---makes the active class darker then the others-->
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Shop</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Designers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Refer</a>
+				</li>
+			</ul>
+		</div>
+</nav>
+
+
+<div class="container-fluid">
+<div class="row">
+	<!--- Image Slider -->
+ <div id="slides" class="carousel slide col-sm-12 col-md-8 col-lg-9" data-ride="carousel">
+  <ul class="carousel-indicators">
+		<li data-target="#slides" data-slide-to="0" class="active"></li>
+		<li data-target="#slides" data-slide-to="1"></li>
+		<li data-target="#slides" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+		<div class="carousel-item active">
+			<div class="carousel-caption">
+				<!--- Display classes of Bootstrap make text larger. display is from 1 to 4 -->
+				<h1 class="display-2">Bootstrap</h1>
+				<h3>Complete website Layout</h3>
+			</div>
+		 </div>
+		<div class="carousel-item">
+			<img src="img/foto13.png">
+		</div>
+		<div class="carousel-item">
+			<img src="img/background3.png">
+		</div>
+  </div>
+ </div>
+ <div class="r-img  d-none d-md-block col-md-4 col-lg-3">
+ 	<img src="img/foto14.png" alt="">
+ </div>
+</div>
+</div>
+
+</body>
+</html>

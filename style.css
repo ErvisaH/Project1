@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+html, body{
+  height:100%;
+  width:100%;
+  font-family: 'Poppins', sans-serif;
+  color:#222;
+  background:
+}
+.navbar{
+  background: white;
+  padding: .8rem;
+}
+.navbar-nav li{
+padding-right: 20px;
+}
+.nav-link{
+  font-size: 1.1em !important;
+}
+
+
+.carousel{
+  z-index: -99;
+  background: #fcbc1e;
+  max-height: 100vh;
+}
+
+.carousel-inner img{
+  width:100%;
+  heigth:100%;
+}
+.r-img img{
+  width:100%;
+  heigth:100%;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 0;
+}
