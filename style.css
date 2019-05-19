@@ -117,13 +117,23 @@ padding-right: 20px;
 .r-img {
     flex: 0 0 30%;
 }
+
+.page_container {
+width: 90%;
+height: 80%;
+}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
 .carousel{
     flex: 0 0 100%;
 }
 .r-img {
     display: none;
+}
+
+.page_container {
+width: 90%;
+height: 90%;
 }
 }
