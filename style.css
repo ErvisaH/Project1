@@ -53,6 +53,7 @@ padding-right: 20px;
   padding: 0;
   margin:0;
 }
+/* Bad never do this
 .carousel .branding{
   position: absolute;
   font-size: 130px;
@@ -60,6 +61,7 @@ padding-right: 20px;
   margin-left: 500px;
 
 }
+*/
 
 .carousel-inner .carousel-item {
   transition: -webkit-transform 2s ease;
@@ -106,4 +108,22 @@ padding-right: 20px;
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+.carousel{
+    flex: 0 0 70%;
+}
+.r-img {
+    flex: 0 0 30%;
+}
+}
+
+@media only screen and (max-width: 800px) {
+.carousel{
+    flex: 0 0 100%;
+}
+.r-img {
+    display: none;
+}
 }
