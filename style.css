@@ -4,11 +4,22 @@ html, body{
   width:100%;
   font-family: 'Poppins', sans-serif;
   color:#222;
-  background:
 }
 .navbar{
   background: white;
   padding: .8rem;
+  left: 50%;
+  width: 98%;
+  max-width: 100%;
+  margin: 0 auto;
+  transform: translateX(-50%);
+  position: fixed;
+  margin-top: 20px;
+}
+.navbar h1{
+  font-size: 1.5em;
+  margin: 0;
+  font-weight: bold;
 }
 .navbar-nav li{
 padding-right: 20px;
@@ -16,21 +27,62 @@ padding-right: 20px;
 .nav-link{
   font-size: 1.1em !important;
 }
-
-
+.main-container{
+  height: 100%;
+}
 .carousel{
   z-index: -99;
   background: #fcbc1e;
   max-height: 100vh;
+  flex: 0 0 75%;
+  padding: 0;
+  margin:0;
+}
+.carousel .branding{
+  position: absolute;
+  font-size: 130px;
+  margin-top: 170px;
+  margin-left: 500px;
+
+}
+
+.carousel-inner .carousel-item {
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
 }
 
 .carousel-inner img{
-  width:100%;
-  heigth:100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+.carousel-inner .girl{
+  height: 100vh;
+  width: auto;
+  margin: 0 auto;
+  margin-left: 35px;
+  transform: translateY(15%);
+  z-index: 99;
+}
+
+.r-img{
+  flex: 0 0 25%;
+  position: relative;
 }
 .r-img img{
   width:100%;
-  heigth:100%;
+  height:100%;
+}
+
+.r-img .after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+   display: block;
+    background: rgba(56, 55, 55, 0.73);
 }
 
 /*--- Bootstrap Padding Fix --*/

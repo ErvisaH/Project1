@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="file1.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
 </head>
@@ -39,36 +40,35 @@
 		</div>
 </nav>
 
+<!--flex box ---->
+<div class="d-flex main-container">
 
-<div class="container-fluid">
-<div class="row">
 	<!--- Image Slider -->
- <div id="slides" class="carousel slide col-sm-12 col-md-8 col-lg-9" data-ride="carousel">
-  <ul class="carousel-indicators">
-		<li data-target="#slides" data-slide-to="0" class="active"></li>
-		<li data-target="#slides" data-slide-to="1"></li>
-		<li data-target="#slides" data-slide-to="2"></li>
-  </ul>
+ <div id="slides" class="carousel slide" data-ride="carousel" data-interval="4000">
+   <span class="branding">Be YOU</span>
+	 <ul class="carousel-indicators">
+ 		<li data-target="#slides" data-slide-to="0" class="active"></li>
+ 		<li data-target="#slides" data-slide-to="1"></li>
+ 		<li data-target="#slides" data-slide-to="2"></li>
+   </ul>
   <div class="carousel-inner">
 		<div class="carousel-item active">
-			<div class="carousel-caption">
-				<!--- Display classes of Bootstrap make text larger. display is from 1 to 4 -->
-				<h1 class="display-2">Bootstrap</h1>
-				<h3>Complete website Layout</h3>
-			</div>
 		 </div>
 		<div class="carousel-item">
-			<img src="img/foto13.png">
+			<img class="girl img-fluid" src="img/foto131.png">
 		</div>
 		<div class="carousel-item">
-			<img src="img/background3.png">
 		</div>
+
   </div>
  </div>
- <div class="r-img  d-none d-md-block col-md-4 col-lg-3">
- 	<img src="img/foto14.png" alt="">
+
+ <!---image on the right--->
+ <div class="r-img">
+ 	<img src="img/foto14.png">
+	<div class="after"></div>
  </div>
-</div>
+
 </div>
 
 </body>
