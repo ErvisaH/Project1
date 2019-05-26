@@ -2,7 +2,7 @@
 html, body{
   height:100%;
   width:100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#222;
 }
 
@@ -16,23 +16,24 @@ body {
     overflow: hidden;
 }
 
-.red {
-   background: red; 
+/* .red {
+   background: red;
 }
 
 .yellow {
-   background: yellow; 
+   background: yellow;
 }
 
 .blue {
-   background: blue; 
-}
+   background: blue;
+}*/
 
 .page_container {
 width: 90%;
 height: 85%;
 position: relative;
 margin: 0 auto;
+background-color: #fbbd1e;
 }
 .navbar{
     background: white;
@@ -44,6 +45,7 @@ margin: 0 auto;
     transform: translateX(-50%);
     position: absolute;
     margin-top: 30px;
+    z-index: +1;
 }
 .navbar h1{
   font-size: 1.5em;
@@ -59,42 +61,30 @@ padding-right: 20px;
 .main-container{
   height: 100%;
 }
-.carousel{
-  z-index: -99;
-  background: #fcbc1e;
-  flex: 0 0 75%;
-  padding: 0;
-  margin:0;
-  overflow: hidden;
-}
-/* Bad never do this
-.carousel .branding{
+
+.branding{
   position: absolute;
   font-size: 130px;
   margin-top: 170px;
   margin-left: 500px;
+  z-index: -99;
 
 }
-*/
 
-.carousel-inner img{
-  margin: 0 auto;
 
-}
-.carousel-inner img{
+.item img{
   width: auto;
   margin: 0 auto;
-  margin-left: 35px;
+  margin-left: 5px;
   z-index: 99;
+  max-height: 100%;
 }
 
-.carousel-inner {
-        height: 100%;
-}
 
 .r-img{
   flex: 0 0 25%;
   position: relative;
+  z-index: 0;
 }
 .r-img img{
   width:100%;
@@ -121,13 +111,7 @@ padding-right: 20px;
     }
 
 
-.item h1 {
-    left: 20%;
-    position: absolute;
-    color: white;
-    top: 30%;
-    font-size: 50px;
-}
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
     padding: 0;
