@@ -14,6 +14,7 @@ body {
 #slider {
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 /* .red {
@@ -45,7 +46,7 @@ background-color: #fbbd1e;
     transform: translateX(-50%);
     position: absolute;
     margin-top: 30px;
-    z-index: +1;
+    z-index: 1;
 }
 .navbar h1{
   font-size: 1.5em;
@@ -63,11 +64,11 @@ padding-right: 20px;
 }
 
 .branding{
-  position: absolute;
-  font-size: 130px;
-  margin-top: 170px;
-  margin-left: 500px;
-  z-index: -99;
+    top: 20%;
+    position: absolute;
+    font-size: 130px;
+    z-index: -99;
+    left: 45%;
 
 }
 
