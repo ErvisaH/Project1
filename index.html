@@ -3,27 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Complete Bootstrap 4 Website Layout</title>
+	<title>Bazaart</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@4.5.0/dist/css/swiper.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="file1.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@4.5.0/dist/js/swiper.min.js"></script>
-	<link href="style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 
-    <div class="page_container">
+<div class="page_container">
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-md navbar-light sticky-top container">
-	    <h1 class="navbar-brand">Bazaart</h1>
-	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-		<span class="navbar-toggler-icon"></span>
+			<h1 class="navbar-brand">Bazaart</h1>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarResponsive">
 		<!---push the ul to the left adding ml-auto to the class-->
@@ -41,6 +40,7 @@
 		        <li class="nav-item">
 			        <a class="nav-link" href="#">Refer</a>
 		        </li>
+
 		     </ul>
 	    </div>
 	</nav>
@@ -67,14 +67,15 @@
 	  </div>
 
 	    <!---image on the right--->
-	    <div class="r-img">
-		<img src="img/foto14.png">
-		<div class="after"></div>
-	    </div>
+	  <div class="r-img">
+			<figure class="figure">
+			  <img src="img/foto14.png" class="figure-img img-fluid">
+			</figure>
+		  <div class="after"></div>
+	  </div>
 
 	</div>
-
-    </div>
+</div>
     <script>
 	var swiper = new Swiper('.swiper-container', {
 	    pagination: {
